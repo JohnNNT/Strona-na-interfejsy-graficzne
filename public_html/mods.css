@@ -27,7 +27,15 @@ h1 {
     margin: 2px;
     box-sizing: border-box;
     display: inline-block;
-    max-width: 120px;
+    max-width: 200px;
     padding: 5px;
     text-decoration: none;
+}
+
+#mod_search {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start
 }
