@@ -10,3 +10,68 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 h1 {
     text-align: center;
 }
+
+.sideways {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.side_container {
+    flex: 0 0 auto;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+}
+
+figure {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.small_photo {
+    height: 109px;
+    width: 143px;
+}
+
+figcaption {
+    overflow: auto;
+    text-decoration: none;
+    color: black;
+}
+
+.side_article_link {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    text-decoration: none;
+}
+
+.large_container {
+    max-width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-style: solid;
+    justify-content: center;
+}
+
+.faction {
+    padding: 10px;
+}
+
+#factions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
