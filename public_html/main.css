@@ -11,6 +11,8 @@ html {
     padding: 0;
     margin: 0;
     font-family: "Inter", "Arial", serif;
+    background-image: url(images/Background.png);
+    background-repeat: repeat;
 }
 
 body{
