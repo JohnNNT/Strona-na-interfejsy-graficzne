@@ -50,6 +50,6 @@ def serve_registration():
 def serve_upload():
     return send_from_directory("", "mod-upload.htm")
 
-@app.route("/unit-comparision")
+@app.route("/your-offers.htm")
 def serve_comparision():
-    return send_from_directory("", "unit-comparision")
+    return send_from_directory("", "your-offers.htm")
