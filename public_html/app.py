@@ -6,3 +6,7 @@ app = Flask(__name__)
 def send_report(path):
     # Using request args for path will expose you to directory traversal attacks
     return send_from_directory('', path)
+
+@app.route('/')
+def serve_home():
+    return send_from_directory('', "index.html")
