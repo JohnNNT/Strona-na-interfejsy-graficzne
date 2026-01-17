@@ -45,3 +45,7 @@ def serve_login():
 @app.route("/create-account.htm")
 def serve_registration():
     return send_from_directory("", "create-account.htm")
+
+@app.route("/mod-upload.htm")
+def serve_upload():
+    return send_from_directory("", "mod-upload.htm")
