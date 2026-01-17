@@ -48,7 +48,7 @@ async function getExchangeOffers(itemBase){
 
 async function filterSearch() {
     const input = document.getElementById("search-item").value;
-    const resultField = document.getElement("search-results");
+    const resultField = document.getElementById("search-results");
     resultField.textContent = '';
     const searchResult = await getItemSearch(input);
     searchResult.items.forEach((item) => {
