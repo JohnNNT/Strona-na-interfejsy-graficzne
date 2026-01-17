@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def serve_home():
-    return send_from_directory('', "index.html")
+    return send_from_directory('', "/index.html")
 
 @app.route('/index.html')
 def serve_home():
