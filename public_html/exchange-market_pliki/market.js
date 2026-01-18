@@ -4,7 +4,7 @@
  */
 
 async function getItemSearch(itemName) {
-    const url = "www.interf26.pythonanywhere.com/searchItem";
+    const url = "/searchItem";
     const itemList = await fetch(url, {
         method: "POST",
         headers: {
