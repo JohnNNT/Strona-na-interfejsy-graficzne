@@ -697,7 +697,12 @@ body ::-webkit-scrollbar{
     height:624px;
     position:absolute;
     top:255px;
-    left:505px
+    left:505px;
+    display: grid;
+    grid-template-columns: repeat(3, 143px);
+    grid-template-rows: repeat(4, 153px);
+    grid-column-gap: 19px;
+    grid-row-gap: 0px; 
 }
 #Group_6{
     --f2w-order:0;
@@ -1415,7 +1420,7 @@ body ::-webkit-scrollbar{
     top:231px;
     left:322px
 }
-#Rectangle_19{
+#mod-name-search-bar{
     --f2w-order:0;
     background-color:#d9d9d9;
     border:1px solid #000;
@@ -2295,7 +2300,67 @@ body ::-webkit-scrollbar{
     font-family:Inter;
     font-size:13px;
     font-weight:400
-}</style>
+}
+
+.mod-grid {
+display: grid;
+grid-template-columns: repeat(3, 143px);
+grid-template-rows: repeat(4, 153px);
+grid-column-gap: 19px;
+grid-row-gap: 0px;
+}
+
+.mod-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mod-image {
+    position: relative;
+    width: 143px;
+    height: 109px;
+}
+
+.mod-title{
+    font-family: Inter;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.star-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.material-symbols--star-high {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%aa9700' d='m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.material-symbols--star {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffe300' d='m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z'/%3E%3C/svg%3E");
+}
+
+
+</style>
 
 </head><body id="_">
   <div id="Desktop" class="dragScroll">
@@ -2337,101 +2402,26 @@ body ::-webkit-scrollbar{
       </div>
       <span id="_601_591" ><span id="__19" class="text">Upload Mod</span></span>
     </a>
+    
+    <!--mod browser container-->
     <div id="Group_19">
-      <a href="javascript:void(0)" id="Group_6">
-        <div id="Rectangle_9" >
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__20" fetchpriority="high" decoding="async">
-        </div>
-        <span id="_601_595" ><span id="__21" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
-      <a href="javascript:void(0)" id="Group_7">
-        <div id="Rectangle_9_0" >
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__22" fetchpriority="high" decoding="async">
-        </div>
-        <span id="_601_604" ><span id="__23" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4_0"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
-      <a href="javascript:void(0)" id="Group_8">
-        <div id="Rectangle_9_1" >
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__24" fetchpriority="high" decoding="async">
-        </div>
-        <span id="_601_613" ><span id="__25" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4_1"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
-      <a href="javascript:void(0)" id="Group_9">
-        <div id="Rectangle_9_2" >
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__26" fetchpriority="high" decoding="async">
-        </div>
-        <span id="_601_622" ><span id="__27" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4_2"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
-      <a href="javascript:void(0)" id="Group_10">
-        <div id="Rectangle_9_3" >
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__28" fetchpriority="high" decoding="async">
-        </div>
-        <span id="_601_631" ><span id="__29" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4_3"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
-      <a href="javascript:void(0)" id="Group_11">
-        <div id="Rectangle_9_4" >
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__30" fetchpriority="high" decoding="async">
-        </div>
-        <span id="_601_640" ><span id="__31" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4_4"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
-      <a href="javascript:void(0)" id="Group_12">
-        <div id="Rectangle_9_5" >
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__32" fetchpriority="high" decoding="async">
-        </div>
-        <span id="_601_649" ><span id="__33" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4_5"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
-      <a href="javascript:void(0)" id="Group_13">
-        <div id="Rectangle_9_6" >
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__34" fetchpriority="high" decoding="async">
-        </div>
-        <span id="_601_658" ><span id="__35" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4_6"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
-      <a href="javascript:void(0)" id="Group_14">
-        <div id="Rectangle_9_7" >
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__36" fetchpriority="high" decoding="async">
-        </div>
-        <span id="_601_667" ><span id="__37" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4_7"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
-      <a href="javascript:void(0)" id="Group_15">
-        <button id="Rectangle_9_8">
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__38" fetchpriority="high" decoding="async">
-        </button>
-        <span id="_601_676" ><span id="__39" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4_8"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
-      <a href="javascript:void(0)" id="Group_16">
-        <div id="Rectangle_9_9" >
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__40" fetchpriority="high" decoding="async">
-        </div>
-        <span id="_601_685" ><span id="__41" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4_9"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
-      <a href="javascript:void(0)" id="Group_17">
-        <div id="Rectangle_9_10" >
-          <img src="mod-browser_pliki/public.png" alt="Rectangle 9" id="__42" fetchpriority="high" decoding="async">
-        </div>
-        <span id="_601_694" ><span id="__43" class="text">Title</span></span>
-<svg preserveAspectRatio="none" id="Group_4_10"  width="72" height="13" viewBox="0 0 72 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M65.5 0L66.9593 4.49139H71.6819L67.8613 7.26722L69.3206 11.7586L65.5 8.98278L61.6794 11.7586L63.1387 7.26722L59.3181 4.49139H64.0407L65.5 0Z" fill="#D2D957"></path><path d="M50.5 0L51.9593 4.49139H56.6819L52.8613 7.26722L54.3206 11.7586L50.5 8.98278L46.6794 11.7586L48.1387 7.26722L44.3181 4.49139H49.0407L50.5 0Z" fill="#D2D957"></path><path d="M35.5 0L36.9593 4.49139H41.6819L37.8613 7.26722L39.3206 11.7586L35.5 8.98278L31.6794 11.7586L33.1387 7.26722L29.3181 4.49139H34.0407L35.5 0Z" fill="#D2D957"></path><path d="M20.5 0L21.9593 4.49139H26.6819L22.8613 7.26722L24.3206 11.7586L20.5 8.98278L16.6794 11.7586L18.1387 7.26722L14.3181 4.49139H19.0407L20.5 0Z" fill="#D2D957"></path><path d="M6.5 0L7.95934 4.49139H12.6819L8.86126 7.26722L10.3206 11.7586L6.5 8.98278L2.6794 11.7586L4.13874 7.26722L0.318133 4.49139H5.04066L6.5 0Z" fill="#D2D957"></path></svg>
-      </a>
+        
     </div>
+    
+    
     <div id="Group_18">
-      <input type="text" id="Rectangle_19" placeholder="Search"></input>
-      <input type="checkbox" id="Rectangle_26"></input>
-      <input type="checkbox" id="Rectangle_27"></input>
-      <input type="checkbox" id="Rectangle_28"></input>
-      <input type="checkbox" id="Rectangle_29"></input>
-      <input type="checkbox" id="Rectangle_30"></input>
-      <input type="checkbox" id="Rectangle_31"></input>
-      <input type="checkbox" id="Rectangle_32"></input>
+        <input type="search" id="mod-name-search-bar" placeholder="Search">
+        
+        <form id="mod-tags">
+            <input type="checkbox" id="Rectangle_26" name="tag1">
+            <input type="checkbox" id="Rectangle_27" name="tag2">
+            <input type="checkbox" id="Rectangle_28" name="tag3">
+            <input type="checkbox" id="Rectangle_29" name="tag4">
+            <input type="checkbox" id="Rectangle_30" name="tag5">
+            <input type="checkbox" id="Rectangle_31" name="tag6">
+            <input type="checkbox" id="Rectangle_32" name="tag7">
+        </form>
+
     </div>
     <span id="_601_718" ><span id="__45" class="text">Create account</span></span>
     <div id="Group_34">
@@ -2473,4 +2463,14 @@ body ::-webkit-scrollbar{
     <span id="_601_743" ><span id="__58" class="text">Text</span></span>
   </div>
   <script src="script.js"></script>
+  <script type="module" src="mod-browser_pliki/browser.js"></script>
+  
+  
+  <template id="mod-article">
+      <a class="mod-link">
+            <h3 class="mod-title">Mod title</h3>
+            <img class="mod-image" src="mod-browser_pliki/public.png">
+            <div class="star-container"></div>
+        </a>
+  </template>
 </body></html>
