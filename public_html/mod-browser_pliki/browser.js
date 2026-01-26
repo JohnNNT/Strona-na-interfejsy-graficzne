@@ -7,7 +7,7 @@ function getModList(){
     
     const modListSize = modList.length;
         
-    for (let i = 0; i < modListSize; i += 1) {
+    for (let i = 0; i < Math.min(modListSize, 12); i += 1) {
         const newMod = document.importNode(modTemplate.content, true);
         const rating = modList[i].modRating;
         const star_container = newMod.querySelector("div");
