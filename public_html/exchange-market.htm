@@ -1447,10 +1447,44 @@
         #search-results{
             display: none;
             background-color: #c32929;
+            position: absolute;
+            top: 200px;
         }
 
         #search-item:focus #search-results{
             display: block;
+        }
+
+        .tabela {
+        	text-align: center;
+        	width: 47%;
+        	margin: 0 auto;
+        	margin-top: 170px;
+        	display: table;
+        	padding: 0 0 8em 0;
+        	position: relative;
+        	top: 90px;
+        	left: 80px;
+        }
+
+        .tabela th h1 {
+        	font-weight: bold;
+        	font-size: 1em;
+        }
+
+        .tabela td, .tabela th {
+        	padding-bottom: 2%;
+        	padding-top: 2%;
+        	border: 2px solid black;
+        }
+
+        .checkbox {
+            background-color:#b2a2a2;
+            border:1px solid #000;
+            border-radius:0;
+            width:27px;
+            height:27px;
+            position:relative;
         }
         </style>
 
@@ -1486,30 +1520,43 @@
                 <span id="_603_521"><span id="__12"><a href="looking-for-players.htm" id="__13" class="text">Looking for game</a></span></span>
                 <span id="_603_522"><span id="__14"><a href="exchange-market.htm" id="__15" class="text">Exchange Market</a></span></span>
             </div>
-            <div id="Rectangle_39" class="pointer-events-none">
-            </div>
+            <div id="Rectangle_39" class="pointer-events-none"></div>
             <span id="_603_524" class="pointer-events-none"><span id="__16" class="text">Exchange offers</span></span>
+            <!-- ta tabela na razie jest zakomentowana
             <div id="Group_36">
                 <div class="grid-container"><div class="grid-item">Seller</div></div>
                 <div class="grid-container"><div class="grid-item">Item name</div></div>
                 <div class="grid-container"><div class="grid-item">Item image</div></div>
                 <div class="grid-container"><div class="grid-item">Confirmation</div></div>
             </div>
+            -->
+            <table class="tabela" id="tabela">
+        		<thead>
+    				<tr>
+    					<th><h1>Seller</h1></th>
+    					<th><h1>Item name</h1></th>
+    					<th><h1>Item image</h1></th>
+    					<th><h1>Confirmation</h1></th>
+    				</tr>
+    			</thead>
+			    <tbody id="tablecontent"></tbody>
+		    </table>
             <div id="Rectangle_114">
                 <input type="text" id="search-item" name="search-item" placeholder="🔎 Search..." oninput="filterSearch()"/>
-                <nav id="search-results">
-
-                </nav>
+                <nav id="search-results"></nav>
             </div>
+            <script>filterSearch()</script>
             <label for="search-item" id="_603_535" class="pointer-events-none"><span id="__19" class="text">Select item to exchange</span></label>
         </div>
     </body>
 
-    <template id="grid-row">
+    <!--
+    <div id="grid-row">
         <header class="grid-container"><div class="grid-item">Seller</div></header>
         <p class="grid-container"><div class="grid-item">Item</div></p>
         <div class="grid-container"><img src="" alt="" class="item_image"/></div>
         <div class="grid-container"><a class="confirm-exchange" href="">Exchange</a></div>
-    </template>
+    </div>
+    -->
     <script src="script.js"></script>
 </html>
