@@ -1,6 +1,6 @@
 import {getMods} from 'getMods.js'
 
-async function getModList(){
+export async function getModList(){
     const modTemplate = document.getElementById("mod-article");
     
     const modList = await getMods();
