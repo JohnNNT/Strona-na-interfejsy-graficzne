@@ -25,6 +25,10 @@ async function getModList(){
     const modList = await getMods();
     
     const modListSize = modList.length;
+    
+    while (document.getElementById("Group_19").firstChild) {
+    document.getElementById("Group_19").removeChild(document.getElementById("Group_19").lastChild);
+  }
         
     for (let i = 0; i < Math.min(modListSize, 12); i += 1) {
         const newMod = document.importNode(modTemplate.content, true);
