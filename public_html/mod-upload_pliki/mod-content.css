@@ -1,0 +1,30 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 27 sty 2026, 11:47:56
+    Author     : tarcz
+*/
+
+.mod_video{
+    height: 143px;
+    width: 153px;
+}
+
+.mod_photo {
+    height: 143px;
+    width: 153px;
+}
+
+#preview {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow-x: auto;
+    width:594px;
+    position: absolute;
+    left: 365px;
+    top:730px;
+    height: 143px;
+}
