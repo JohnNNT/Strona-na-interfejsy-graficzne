@@ -1,6 +1,6 @@
 import {getMods} from 'getMods.js'
 
-function getModList(){
+async function getModList(){
     const modTemplate = document.getElementById("mod-article");
     
     const modList = await getMods();
@@ -26,6 +26,6 @@ function getModList(){
         newMod.querySelector("img").setAttribute("src", modList[i].modImage);
         newMod.querySelector("h3").textContent = modList[i].modName;
         
-        document.getElementById("Group_19").appendNode(newMod);
+        document.getElementById("Group_19").appendChild(newMod);
     }
 }
