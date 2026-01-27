@@ -1,4 +1,4 @@
-import {getMods} from 'getMods.js'
+import {getMods} from './modules/getMods.js'
 
 export async function getModList(){
     const modTemplate = document.getElementById("mod-article");
