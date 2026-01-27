@@ -5,7 +5,7 @@
 const imgInp = document.getElementById("mod_viewable");
 const container = document.getElementById("preview");
 
-imgInp.addEventListener() = evt => {
+imgInp.addEventListener("change", () => {
   const files = imgInp.files;
   for(const file in files) {
       console.log(typeof(file));
@@ -16,4 +16,4 @@ imgInp.addEventListener() = evt => {
           container.appendNode(newImage);
       }
   }
-};
+});
