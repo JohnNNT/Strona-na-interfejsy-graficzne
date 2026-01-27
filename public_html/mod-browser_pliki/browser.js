@@ -1,6 +1,25 @@
-import {getMods} from './modules/getMods.js'
+async function getMods(){
+    const tags = new FormData(document.getElementById("mod-tags"));
+    let modTags = [];
 
-export async function getModList(){
+    for (const [key, value] of tags) {
+        modTags.push(key);
+    }
+    
+    const itemName = document.getElementById("mod-name-search-bar").value;
+    
+    const mods = await fetch("/searchMods", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({searchTerm: itemName, tags: modTags})
+    });
+    
+    return await mods.json();
+}
+
+async function getModList(){
     const modTemplate = document.getElementById("mod-article");
     
     const modList = await getMods();
